@@ -641,17 +641,17 @@ PrefabInstance:
     - target: {fileID: 2635595006110993715, guid: 12c142073d89d48bd8669744485302c3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -50.51214
+      value: -50.6
       objectReference: {fileID: 0}
     - target: {fileID: 2635595006110993715, guid: 12c142073d89d48bd8669744485302c3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.819781
+      value: -8.8
       objectReference: {fileID: 0}
     - target: {fileID: 2635595006110993715, guid: 12c142073d89d48bd8669744485302c3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 327.47858
+      value: 327.4
       objectReference: {fileID: 0}
     - target: {fileID: 2635595006110993715, guid: 12c142073d89d48bd8669744485302c3,
         type: 3}
@@ -701,7 +701,7 @@ PrefabInstance:
     - target: {fileID: 7467305784033465333, guid: 12c142073d89d48bd8669744485302c3,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1456,8 +1456,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9091a928d9aea7b4ebca72c519355a65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthyDisk: {fileID: 7296064188942575920}
-  herniatedDisk: {fileID: 256120731}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
