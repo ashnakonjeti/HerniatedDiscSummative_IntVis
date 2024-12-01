@@ -7,7 +7,7 @@ using UnityEngine;
 public class HoverAndChangeColour : MonoBehaviour
 {
 
-    Color mouseOverColor = Color.magenta;
+    Color mouseOverColor = new Color(1f, 1f, 0.61f, 0.7f);
 
     Color originalColor;
 
