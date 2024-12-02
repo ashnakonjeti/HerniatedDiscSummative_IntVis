@@ -1344,7 +1344,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Quiz
+  m_text: 'Next: Quiz
 
 '
   m_isRightToLeft: 0
@@ -1374,8 +1374,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45
-  m_fontSizeBase: 45
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1676,6 +1676,7 @@ GameObject:
   - component: {fileID: 1611332145}
   - component: {fileID: 1611332144}
   - component: {fileID: 1611332143}
+  - component: {fileID: 1611332146}
   m_Layer: 0
   m_Name: BackSceneButton
   m_TagString: Untagged
@@ -1746,7 +1747,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1611332144}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1611332146}
+        m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
+        m_MethodName: LoadSceneByName
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Symptoms_003
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1611332144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1785,6 +1798,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1611332141}
   m_CullTransparentMesh: 1
+--- !u!114 &1611332146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611332141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32990189a5df58946ae9ec62b314f9c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1653457483 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2561219536669856997, guid: 54396a22de3cc59439bb24d2e6b22a49,
