@@ -347,7 +347,7 @@ GameObject:
   - component: {fileID: 185349861}
   - component: {fileID: 185349860}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: 'BackAboutText '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2038,6 +2038,7 @@ GameObject:
   - component: {fileID: 1365174824}
   - component: {fileID: 1365174823}
   - component: {fileID: 1365174822}
+  - component: {fileID: 1365174825}
   m_Layer: 0
   m_Name: PlayButton
   m_TagString: Untagged
@@ -2108,7 +2109,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1365174823}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1360614571}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1365174825}
+        m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
+        m_MethodName: LoadSceneByName
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: DiskHerniation_002
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1365174823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2147,6 +2172,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1365174820}
   m_CullTransparentMesh: 1
+--- !u!114 &1365174825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365174820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32990189a5df58946ae9ec62b314f9c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1375511370
 GameObject:
   m_ObjectHideFlags: 0
