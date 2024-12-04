@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Treatment_004.unity
     guid: 7b366b90a6e117b4687df223f1317253
+  - enabled: 1
+    path: Assets/Scenes/Quiz_005.unity
+    guid: 7891a053a188344e8aed3af423b4f385
   m_configObjects: {}
