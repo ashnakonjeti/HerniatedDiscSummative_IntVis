@@ -392,21 +392,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Within the United States, every year more than 3 million people are diagnosed
-    with a herniated disk (Cleveland Clinic, 2024). A herniated disk occurs when
-    a disk tears and the middle called the "nucleus pulposus" leaks which then compresses
-    against the nerve root causing pain (Cleveland Clinic, 2024). Depending on the
-    location of the herniated disk, whether it''s within the cervical, thoracic,
-    or lumbar region, referred pain differs from each region (Cleveland Clinic, 2024).
-    Symptoms of a herniated disk include back pain, neck pain, numbness or tingling
-    in arms and legs, and muscle weakness (Cleveland Clinic, 2024). Causes of a herniated
-    disk include, aging, traumatic injuries, and imroper lifting (Cleveland Clinic,
-    2024). Furthermore, risk factors include, smoking, sitting for long periods of
-    time, diabetes, and having a connective tissue disorder (Cleveland Clinic, 2024).
-    Treatment options for a herniated disk involves medication, physical therapy,
-    spinal injections, and surgery, such as a diskectomy (Cleveland Clinic, 2024).
-    A diskectomy is a procedure where part of the herniated disk is removed, and
-    has an overall success rate of 60% to 90% (Cleveland Clinic, 2024). '
+  m_text: "Every year, over 3 million people in the United States are diagnosed with
+    a herniated disk. \n\nSpinal disks are located between the spinal verebrae. Herniation
+    occurs when a disk tears and the central \"nucleus pulposus\" leaks through the
+    tear, compressing the spinal nerve root and causing pain. \n\nCommon symptoms:
+    back pain, neck pain, numbness or tingling in arms and legs, and muscle weakness.
+    \n\nCommon causes: aging, traumatic injuries, and improper lifting. \n\nCommon
+    risk factors: smoking, sitting or driving for long periods of time, being overweight,
+    and having a connective tissue disorder. \n\nTreatment options: Medication, physical
+    therapy, spinal injections, and surgery, such as a diskectomy*.\n\n*A diskectomy
+    is a procedure where part of the herniated disk is removed and has an overall
+    success rate of 60% to 90%. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2d3a3b352dc20b9408ce17d372ee7d44, type: 2}
   m_sharedMaterial: {fileID: -6593585434953132658, guid: 2d3a3b352dc20b9408ce17d372ee7d44,
@@ -2131,7 +2127,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: DiskHerniation_002
+          m_StringArgument: AnatomyIntroPanel_001
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1365174823
