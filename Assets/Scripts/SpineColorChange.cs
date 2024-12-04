@@ -26,20 +26,20 @@ public class SpineColorChange : MonoBehaviour
         
     }
 
-    void OnMouseEnter ()
-    {
-        myRenderer.material.color = highlightColor;
-    }
-
-    void OnMouseExit ()
-    {
-        myRenderer.material.color = myInitialColor;
-    }
-
+    private bool isClicked = false;
 
     void OnMouseDown ()
     {
-        myRenderer.material.color = pressedColor;
+        if (isClicked)
+        {
+            myRenderer.material.color = myInitialColor;
+        }
+        else
+        {
+            myRenderer.material.color = pressedColor;
+        }
+        isClicked = !isClicked;
+        
     }
 
 }

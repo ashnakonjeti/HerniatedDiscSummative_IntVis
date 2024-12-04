@@ -29,14 +29,21 @@ public class ClickActivateSpine : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if (Input.GetMouseButtonDown(0))
-        {
-            painPart.GetComponent<Renderer>();
-        }*/
+      
     }
 
+    private bool isClicked = false;
     void OnMouseDown ()
     {
-        painRenderer.material.color = showColor;
+        if (isClicked)
+        {
+            painRenderer.material.color = myInitialColor;
+        }
+        else
+        {
+            painRenderer.material.color = showColor;
+        }
+
+        isClicked = !isClicked;
     }
 }
