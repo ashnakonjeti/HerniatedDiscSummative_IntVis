@@ -183,8 +183,8 @@ MonoBehaviour:
 
 
     With
-    your mouse, hover over the different structures of the model for more info. You
-    can also use the arrow keys to roate and zoom in closer.'
+    your mouse, hover over the different structures of the healthy and herniated
+    disks for more info. You can also use the arrow keys to rotate and zoom in closer.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2d3a3b352dc20b9408ce17d372ee7d44, type: 2}
   m_sharedMaterial: {fileID: -6593585434953132658, guid: 2d3a3b352dc20b9408ce17d372ee7d44,
@@ -299,7 +299,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -997,7 +997,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 283, y: -43}
+  m_AnchoredPosition: {x: 283, y: -89}
   m_SizeDelta: {x: 324.9083, y: 57.2136}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1700839935
