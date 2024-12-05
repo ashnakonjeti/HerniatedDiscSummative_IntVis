@@ -9,6 +9,13 @@ public class LoadScene : MonoBehaviour
     
     public void LoadSceneByName(string sceneName)
     {
+        StartCoroutine(DelayToLoadScene(sceneName));
+    }
+
+    private IEnumerator DelayToLoadScene(string sceneName)
+    {
+        yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene(sceneName);
+
     }
 }
