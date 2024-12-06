@@ -2105,6 +2105,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1735115360}
+        m_TargetAssemblyTypeName: ManageQuiz, Assembly-CSharp
+        m_MethodName: StartQuiz
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &387400035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3034,7 +3046,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &469486569
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4199,7 +4211,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &653029776
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7477,7 +7489,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1116393026
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7674,11 +7686,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2140103350}
-  - {fileID: 653029776}
-  - {fileID: 469486569}
-  - {fileID: 1419848887}
   - {fileID: 1116393026}
+  - {fileID: 1419848887}
+  - {fileID: 469486569}
+  - {fileID: 653029776}
+  - {fileID: 2140103350}
   - {fileID: 399046044}
   m_Father: {fileID: 1735115359}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14583,7 +14595,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2140103350
 RectTransform:
   m_ObjectHideFlags: 0

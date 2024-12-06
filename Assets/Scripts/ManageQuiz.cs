@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using Unity.Properties;
 using UnityEngine;
 
@@ -11,22 +12,27 @@ public class ManageQuiz : MonoBehaviour
     [SerializeField]
     private int questionCollectionSize = 3;
 
-    private int index = 0;
+    private int endCounter = 0;
     [SerializeField]
     private GameObject finalPanel;
     [SerializeField]
     private GameObject questionPanel;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
 
-    // Update is called once per frame
-    void Update()
+    int listID;
+
+    public void StartQuiz()
     {
-        
+        Random.InitState((int)Time.time);
+        for (int i = 0; i < questionPanel.transform.childCount; i++)
+        {
+            questionPanel.transform.GetChild(i).gameObject.SetActive(false);
+        } 
+        //pick up a random question from the list and set game object as active
+        listID = Random.Range(0,questionsList.Count);
+        questionsList[listID].SetActive(true);
+        Debug.Log("Start Quiz: " + listID);
     }
 
     public void OnClickNext()
@@ -36,18 +42,26 @@ public class ManageQuiz : MonoBehaviour
             questionPanel.transform.GetChild(i).gameObject.SetActive(false);
         }
 
-        if (index < questionCollectionSize)
-        {
-        //pick up a random question from the list and set game object as active
-        int listID = Random.Range(0,questionsList.Count);
-        questionsList[listID].SetActive(true);
-        //Remove object from list
-        questionsList.RemoveAt(listID);
-        index +=1;
-        }
-        else
-        {
+        if (endCounter == questionCollectionSize) {
+            Debug.Log("Final Panel");
             finalPanel.SetActive(true);
+        } else if (questionsList.Count == questionCollectionSize) { // First run
+            Debug.Log("First run ends");
+            questionsList.RemoveAt(listID);
+            endCounter += 1;
+            
+            listID = Random.Range(0, questionsList.Count);
+            questionsList[listID].SetActive(true);       
+
+        } else if (endCounter < questionCollectionSize)
+        {
+            //pick up a random question from the list and set game object as active
+            listID = Random.Range(0, questionsList.Count);
+            questionsList[listID].SetActive(true);
+            //Remove object from list
+            questionsList.RemoveAt(listID);
+            endCounter += 1;
+            Debug.Log("Other Run:" + endCounter);
         }
     }
 }
