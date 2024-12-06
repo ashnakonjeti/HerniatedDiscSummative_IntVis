@@ -12,7 +12,7 @@ public class ManageQuiz : MonoBehaviour
     [SerializeField]
     private int questionCollectionSize = 3;
 
-    private int endCounter = 0;
+    public int endCounter = 1;
     [SerializeField]
     private GameObject finalPanel;
     [SerializeField]

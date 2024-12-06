@@ -20,18 +20,6 @@ public class ManageQuestion : MonoBehaviour
     [SerializeField]
     private GameObject QuestionObject;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void OnClickConfirm()
     {
         //Retrieve click response
